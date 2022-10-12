@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -7,54 +7,69 @@ const Header = () => {
     <div class="bg-teal-400">
       <div class="px-4 py-5 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8">
         <div class="relative flex items-center justify-between">
-          <Link to ="/"
+          <NavLink
+            to="/"
             aria-label="Mega Quiz"
             title="Mega Quiz"
             class="inline-flex items-center"
           >
-            
             <span class="ml-2 text-xl font-bold tracking-wide text-black uppercase">
               Mega Quiz
             </span>
-          </Link>
+          </NavLink>
           <ul class="flex items-center hidden space-x-8 lg:flex">
             <li>
-              <Link to ="/home"
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "bg-purple-700 text-white px-1" : undefined
+                }
+                to="/home"
                 aria-label="home"
                 title="home"
                 class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Home
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to ="/statistics"
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "bg-purple-700 text-white px-1" : undefined
+                }
+                to="/statistics"
                 aria-label="statistics"
                 title="statistics"
                 class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Statistics
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link to ="/blog"
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "bg-purple-700 text-white px-1" : undefined
+                }
+                to="/blog"
                 aria-label="blog"
                 title="blog"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Blog
-              </Link>
+              </NavLink>
             </li>
             <li>
-              < Link to ="/about"
+              <NavLink
+                className={({ isActive }) =>
+                  isActive ? "bg-purple-700 text-white px-1" : undefined
+                }
+                to="/about"
                 aria-label="About us"
                 title="About us"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
               >
                 About us
-              </Link>
+              </NavLink>
             </li>
-          
           </ul>
           <div class="lg:hidden">
             <button
@@ -83,30 +98,16 @@ const Header = () => {
                 <div class="p-5 bg-teal-400 border rounded shadow-sm">
                   <div class="flex items-center justify-between mb-4">
                     <div>
-                      <Link to ="/"
+                      <NavLink
+                        to="/"
                         aria-label="Mega Quiz"
                         title="Mega Quiz"
                         class="inline-flex items-center"
                       >
-                        <svg
-                          class="w-8 text-deep-purple-accent-400"
-                          viewBox="0 0 24 24"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeMiterlimit="10"
-                          stroke="currentColor"
-                          fill="none"
-                        >
-                          <rect x="3" y="1" width="7" height="12" />
-                          <rect x="3" y="17" width="7" height="6" />
-                          <rect x="14" y="1" width="7" height="6" />
-                          <rect x="14" y="11" width="7" height="12" />
-                        </svg>
                         <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                           Mega Quiz
                         </span>
-                      </Link>
+                      </NavLink>
                     </div>
                     <div>
                       <button
@@ -127,40 +128,57 @@ const Header = () => {
                   <nav>
                     <ul class="space-y-4">
                       <li>
-                        <Link to ="/home"
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive ? "bg-purple-700 text-white px-1" : undefined
+                          }
+                          to="/home"
                           aria-label="home"
                           title="home"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Home
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
-                        <Link to ="/statistics"
+                        <NavLink
+                          t
+                          className={({ isActive }) =>
+                            isActive ? "bg-purple-700 text-white px-1" : undefined
+                          }
+                          to="/statistics"
                           aria-label="statistics"
-                          title="atatistics"
+                          title="statistics"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Statistics
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
-                        <Link to ="/blog"
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive ? "bg-purple-700 text-white px-1" : undefined
+                          }
+                          to="/blog"
                           aria-label="blog"
                           title="blog"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           Blog
-                        </Link>
+                        </NavLink>
                       </li>
                       <li>
-                        <Link to ="/about"
+                        <NavLink
+                          className={({ isActive }) =>
+                            isActive ? "bg-purple-700 text-white px-1" : undefined
+                          }
+                          to="/about"
                           aria-label="About us"
                           title="About us"
                           class="font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400"
                         >
                           About us
-                        </Link>
+                        </NavLink>
                       </li>
                     </ul>
                   </nav>
