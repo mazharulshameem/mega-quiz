@@ -2,7 +2,7 @@
 I'll work with complex state objects, how to handle different state hooks, and render things based on state.
 
 ## Live Link: 
- Hosting on Netlify-> [Mega Quiz] ('https://mega-quiz-shameem.netlify.app/')
+ Hosting on Netlify-> [Mega Quiz] (https://mega-quiz-shameem.netlify.app/)
 
 ## Try it yourself 
 1.When the user clicks a start now button, category based all question should show.
