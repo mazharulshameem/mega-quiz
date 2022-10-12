@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
+import logo from './../img/about.png'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -13,6 +14,7 @@ const Header = () => {
             title="Mega Quiz"
             class="inline-flex items-center"
           >
+              
             <span class="ml-2 text-xl font-bold tracking-wide text-black uppercase">
               Mega Quiz
             </span>
@@ -130,7 +132,9 @@ const Header = () => {
                       <li>
                         <NavLink
                           className={({ isActive }) =>
-                            isActive ? "bg-purple-700 text-white px-1" : undefined
+                            isActive
+                              ? "bg-purple-700 text-white px-1"
+                              : undefined
                           }
                           to="/home"
                           aria-label="home"
@@ -144,7 +148,9 @@ const Header = () => {
                         <NavLink
                           t
                           className={({ isActive }) =>
-                            isActive ? "bg-purple-700 text-white px-1" : undefined
+                            isActive
+                              ? "bg-purple-700 text-white px-1"
+                              : undefined
                           }
                           to="/statistics"
                           aria-label="statistics"
@@ -157,7 +163,9 @@ const Header = () => {
                       <li>
                         <NavLink
                           className={({ isActive }) =>
-                            isActive ? "bg-purple-700 text-white px-1" : undefined
+                            isActive
+                              ? "bg-purple-700 text-white px-1"
+                              : undefined
                           }
                           to="/blog"
                           aria-label="blog"
@@ -170,7 +178,9 @@ const Header = () => {
                       <li>
                         <NavLink
                           className={({ isActive }) =>
-                            isActive ? "bg-purple-700 text-white px-1" : undefined
+                            isActive
+                              ? "bg-purple-700 text-white px-1"
+                              : undefined
                           }
                           to="/about"
                           aria-label="About us"
