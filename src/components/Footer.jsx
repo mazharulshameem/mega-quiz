@@ -100,7 +100,7 @@ const Footer = () => {
                 <li>
                   <a
                     href="/"
-                    className="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-200"
+                    className="text-gray-500 transition-colors duration-300 hover:text-purple-200"
                   >
                     Forum
                   </a>
@@ -121,7 +121,7 @@ const Footer = () => {
               />
               <button
                 type="submit"
-                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-teal-400 hover:bg-purple-700 focus:shadow-outline focus:outline-none"
+                className="inline-flex items-center justify-center h-12 px-6 font-medium tracking-wide text-white transition duration-200 rounded shadow-md bg-purple-700 hover:bg-teal-600 focus:shadow-outline focus:outline-none"
               >
                 Subscribe
               </button>
