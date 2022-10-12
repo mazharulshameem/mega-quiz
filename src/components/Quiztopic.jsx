@@ -6,7 +6,7 @@ const Quiztopic = ({topic}) => {
   const { id, name, logo, total}= topic
   return (
     <div className="mt-10">
-      <div className="max-w-xs rounded-md  shadow-md bg-cyan-100 dark:text-gray-100">
+      <div className="max-w-xs rounded-md  shadow-lg bg-gray-300 dark:text-gray-100">
         <img
           src={logo}
           alt=""
