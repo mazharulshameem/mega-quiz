@@ -11,5 +11,17 @@ I'll work with complex state objects, how to handle different state hooks, and r
 4.When the user gets to the end of the quiz, their total score should be shown.
 
 # More
-1. Full Responsive Responsive 
+1. Fully Responsive
 2.Statistic: It also shown the most question barChart.
+3.Save and run the app. Notice how four answer buttons appear and the text is rendered dynamically.
+
+## Item used in this Project
+1.React router,
+2.Use data Loader,
+3.React router dom,
+4.Toast,
+5.Flowbite,
+6.FontAwesome Icons
+7.Tailwind,
+8.Tiny BarChart.
+9.Data API
