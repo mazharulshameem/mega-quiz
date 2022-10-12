@@ -10,7 +10,7 @@ I'll work with complex state objects, how to handle different state hooks, and r
 3.If the user gets the question wrong .it showing a toast.that is wrong and score not increase.
 4.When the user gets to the end of the quiz, their total score should be shown.
 
-# More
+## More
 1. Fully Responsive
 2.Statistic: It also shown the most question barChart.
 3.Save and run the app. Notice how four answer buttons appear and the text is rendered dynamically.
