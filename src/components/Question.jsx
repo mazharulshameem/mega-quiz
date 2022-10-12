@@ -1,20 +1,10 @@
-// import React from 'react';
 
-// const Question = () => {
-//   return (
-//     <div>
-      
-//     </div>
-//   );
-// };
-
-// export default Question;
-import { Alert, Card } from "flowbite-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
 import React, { useState } from 'react';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Alert, Card } from "flowbite-react";
 
 const Question = ({ question, handleAnswer }) => {
   const [isActive, setIsActive] = useState(true);
@@ -26,8 +16,8 @@ const Question = ({ question, handleAnswer }) => {
     <div className="mt-5">
       <ToastContainer />
       <Card>
-        <div className="flex justify-between justify-center">
-          <h5 className="text-xl font-semibold tracking-tight text-gray-900 dark:text-white max-h-screen ">
+        <div className="flex justify-between ">
+          <h5 className="text-xl font-semibold tracking-tight  text-gray-900 dark:text-white max-h-screen ">
             {question.question.slice(3, -4)}
           </h5>
           <FontAwesomeIcon
@@ -58,7 +48,7 @@ const Question = ({ question, handleAnswer }) => {
           }}
         >
           <span>
-            <span className="font-medium bg-lime-500">Correct Answer :</span>{" "}
+            <span className="font-medium py-4 px-2 text-white bg-teal-400">Correct Answer :</span>{" "}
             {question.correctAnswer}
           </span>
         </Alert>

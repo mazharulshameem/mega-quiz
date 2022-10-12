@@ -12,22 +12,8 @@ const Header = () => {
             title="Mega Quiz"
             class="inline-flex items-center"
           >
-            <svg
-              class="w-8 text-teal-accent-400"
-              viewBox="0 0 24 24"
-              strokeLinejoin="round"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeMiterlimit="10"
-              stroke="currentColor"
-              fill="none"
-            >
-              <rect x="3" y="1" width="7" height="12" />
-              <rect x="3" y="17" width="7" height="6" />
-              <rect x="14" y="1" width="7" height="6" />
-              <rect x="14" y="11" width="7" height="12" />
-            </svg>
-            <span class="ml-2 text-xl font-bold tracking-wide text-gray-100 uppercase">
+            
+            <span class="ml-2 text-xl font-bold tracking-wide text-black uppercase">
               Mega Quiz
             </span>
           </Link>
@@ -36,7 +22,7 @@ const Header = () => {
               <Link to ="/home"
                 aria-label="home"
                 title="home"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Home
               </Link>
@@ -45,7 +31,7 @@ const Header = () => {
               <Link to ="/statistics"
                 aria-label="statistics"
                 title="statistics"
-                class="font-medium tracking-wide text-gray-100 transition-colors duration-200 hover:text-teal-accent-400"
+                class="font-medium tracking-wide text-black transition-colors duration-200 hover:text-teal-accent-400"
               >
                 Statistics
               </Link>
