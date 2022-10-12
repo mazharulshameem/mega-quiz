@@ -84,7 +84,7 @@ const About = () => {
             </div>
           </div>
           <div className="lg:w-1/2 xl:w-3/5 dark:bg-gray-800">
-            <div className="flex items-center justify-center  p-4 md:p-8 lg:p-16 px-4">
+            <div className="flex items-center justify-center  p-4 md:p-12 lg:p-8 px-4">
               <img
                 src={img}
                 alt=""

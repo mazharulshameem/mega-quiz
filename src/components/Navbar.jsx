@@ -12,9 +12,13 @@ const Header = () => {
             to="/"
             aria-label="Mega Quiz"
             title="Mega Quiz"
-            class="inline-flex items-center"
+            class="block-flex items-center"
           >
-              
+            <img
+              src={logo}
+              alt=""
+              className=" h-5 w-5 inline-flex items-center  justify-center"
+            />
             <span class="ml-2 text-xl font-bold tracking-wide text-black uppercase">
               Mega Quiz
             </span>
@@ -106,6 +110,11 @@ const Header = () => {
                         title="Mega Quiz"
                         class="inline-flex items-center"
                       >
+                        <img
+                          src={logo}
+                          alt=""
+                          className=" h-5 w-5 inline-flex items-center justify-center "
+                        />
                         <span class="ml-2 text-xl font-bold tracking-wide text-gray-800 uppercase">
                           Mega Quiz
                         </span>
