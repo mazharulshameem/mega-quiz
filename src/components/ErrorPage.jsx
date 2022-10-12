@@ -10,7 +10,7 @@ const ErrorPage = () => {
             <h1 className="mb-4 text-7xl tracking-tight font-extrabold lg:text-9xl text-gray-700">
               404
             </h1>
-            <p className="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl dark:text-white">
+            <p className="mb-4 text-3xl tracking-tight font-bold text-gray-900 md:text-4xl text-rose-600">
               Sorry, we couldn't find this page.
             </p>
             <h2 className="mb-4 text-lg font-light text-gray-600 dark:text-gray-400">
